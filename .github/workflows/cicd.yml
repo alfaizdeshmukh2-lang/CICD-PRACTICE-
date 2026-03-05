@@ -6,8 +6,20 @@ name: CICD
 
 on:
   workflow_dispatch:
+    inputs:
+      environment: 
+        default: 'dev' 
+        description: This is the environment value where this workflow runs options
+        required: true 
+        type: choice 
+        options:
+          - dev
+          - prod
+          - staging 
+        
 
 jobs:
+# every job needs seprate runner , its called parallelism
   code:
     runs-on: ubuntu-latest 
     steps:
