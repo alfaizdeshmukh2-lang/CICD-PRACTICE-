@@ -1,371 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-          <title>Alfaiz Deshmukh | DevOps Engineer</title>
+<title>Alfaiz Deshmukh | DevOps Engineer</title>
 
-          <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-                    rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-          <style>
-                    * {
-                              margin: 0;
-                              padding: 0;
-                              box-sizing: border-box;
-                              font-family: 'Poppins', sans-serif;
-                              scroll-behavior: smooth;
-                    }
+<style>
 
-                    body {
-                              background: #0f172a;
-                              color: #e2e8f0;
-                    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
 
-                    .container {
-                              width: 85%;
-                              margin: auto;
-                              max-width: 1200px;
-                    }
+body{
+background:#0f172a;
+color:#e2e8f0;
+}
 
-                    /* NAVBAR */
+.container{
+width:85%;
+margin:auto;
+max-width:1200px;
+}
 
-                    nav {
-                              position: sticky;
-                              top: 0;
-                              background: #020617;
-                              padding: 15px 0;
-                              z-index: 1000;
-                    }
+/* NAVBAR */
 
-                    nav .container {
-                              display: flex;
-                              justify-content: space-between;
-                              align-items: center;
-                    }
+nav{
+position:sticky;
+top:0;
+background:#020617;
+padding:15px 0;
+z-index:1000;
+}
 
-                    nav h2 {
-                              color: #38bdf8;
-                    }
+nav .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-                    nav ul {
-                              display: flex;
-                              list-style: none;
-                    }
+nav h2{
+color:#38bdf8;
+}
 
-                    nav ul li {
-                              margin-left: 20px;
-                    }
+nav ul{
+display:flex;
+list-style:none;
+}
 
-                    nav a {
-                              text-decoration: none;
-                              color: white;
-                              font-size: 14px;
-                    }
+nav ul li{
+margin-left:25px;
+}
 
-                    /* HERO */
+nav a{
+text-decoration:none;
+color:white;
+font-size:14px;
+}
 
-                    .hero {
-                              height: 90vh;
-                              display: flex;
-                              align-items: center;
-                    }
+/* HERO */
 
-                    .hero h1 {
-                              font-size: 48px;
-                              margin-bottom: 10px;
-                    }
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+height:90vh;
+}
 
-                    .hero span {
-                              color: #38bdf8;
-                    }
+.hero-text{
+max-width:550px;
+}
 
-                    .hero p {
-                              margin: 20px 0;
-                              max-width: 600px;
-                    }
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
 
-                    .btn {
-                              display: inline-block;
-                              padding: 12px 24px;
-                              background: #38bdf8;
-                              color: #020617;
-                              border-radius: 6px;
-                              text-decoration: none;
-                              font-weight: 500;
-                    }
+.hero span{
+color:#38bdf8;
+}
 
-                    /* SECTION */
+.hero p{
+margin:20px 0;
+}
 
-                    section {
-                              padding: 80px 0;
-                    }
+.hero-img img{
+width:280px;
+border-radius:15px;
+border:4px solid #38bdf8;
+}
 
-                    .section-title {
-                              text-align: center;
-                              margin-bottom: 40px;
-                              font-size: 32px;
-                              color: #38bdf8;
-                    }
+/* BUTTON */
 
-                    /* SKILLS */
+.btn{
+display:inline-block;
+padding:12px 24px;
+background:#38bdf8;
+color:#020617;
+border-radius:6px;
+text-decoration:none;
+font-weight:500;
+margin-right:10px;
+}
 
-                    .skills-grid {
-                              display: grid;
-                              grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                              gap: 20px;
-                    }
+/* SECTION */
 
-                    .skill {
-                              background: #1e293b;
-                              padding: 20px;
-                              text-align: center;
-                              border-radius: 8px;
-                              transition: 0.3s;
-                    }
+section{
+padding:80px 0;
+}
 
-                    .skill:hover {
-                              transform: translateY(-5px);
-                              background: #334155;
-                    }
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+color:#38bdf8;
+}
 
-                    /* PROJECTS */
+/* SKILLS */
 
-                    .projects {
-                              display: grid;
-                              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                              gap: 25px;
-                    }
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
 
-                    .project-card {
-                              background: #1e293b;
-                              padding: 25px;
-                              border-radius: 10px;
-                              transition: 0.3s;
-                    }
+.skill{
+background:#1e293b;
+padding:20px;
+text-align:center;
+border-radius:8px;
+transition:0.3s;
+}
 
-                    .project-card:hover {
-                              transform: translateY(-5px);
-                              background: #334155;
-                    }
+.skill:hover{
+transform:translateY(-5px);
+background:#334155;
+}
 
-                    .project-card h3 {
-                              color: #38bdf8;
-                              margin-bottom: 10px;
-                    }
+/* PROJECTS */
 
-                    /* EXPERIENCE */
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
 
-                    .timeline {
-                              background: #1e293b;
-                              padding: 25px;
-                              border-radius: 10px;
-                    }
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
 
-                    /* CONTACT */
+.project-card:hover{
+transform:translateY(-5px);
+background:#334155;
+}
 
-                    .contact {
-                              text-align: center;
-                    }
+.project-card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
 
-                    footer {
-                              text-align: center;
-                              padding: 20px;
-                              background: #020617;
-                              margin-top: 40px;
-                    }
-          </style>
+/* EXPERIENCE */
+
+.timeline{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+}
+
+</style>
 </head>
 
 <body>
 
-          <!-- NAVBAR -->
+<!-- NAVBAR -->
 
-          <nav>
-                    <div class="container">
+<nav>
+<div class="container">
 
-                              <h2>Alfaiz</h2>
+<h2>Alfaiz</h2>
 
-                              <ul>
-                                        <li><a href="#about">About</a></li>
-                                        <li><a href="#skills">Skills</a></li>
-                                        <li><a href="#projects">Projects</a></li>
-                                        <li><a href="#experience">Experience</a></li>
-                                        <li><a href="#contact">Contact</a></li>
-                              </ul>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
-                    </div>
-          </nav>
+</div>
+</nav>
 
 
-          <!-- HERO -->
+<!-- HERO SECTION -->
 
-          <section class="hero container">
+<section class="hero container">
 
-                    <div>
+<div class="hero-text">
 
-                              <h1>Hello, I'm <span>Alfaiz Deshmukh</span></h1>
+<h1>Hello, I'm <span>Alfaiz Deshmukh</span></h1>
 
-                              <p>
-                                        Entry-level DevOps Engineer with hands-on experience in cloud computing,
-                                        automation, and infrastructure management. Passionate about building
-                                        scalable systems and solving real-world deployment challenges.
-                              </p>
+<p>
+Entry-level DevOps Engineer passionate about cloud infrastructure,
+automation, CI/CD pipelines, and building scalable systems.
+</p>
 
-                              <a href="#projects" class="btn">View My Projects</a>
+<a href="https://github.com/alfaizdeshmukh2-lang" class="btn" target="_blank">GitHub</a>
 
-                    </div>
+<a href="https://www.linkedin.com/in/alfaiz-deshmukh-994999268" class="btn" target="_blank">LinkedIn</a>
 
-          </section>
+</div>
 
 
-          <!-- ABOUT -->
+<div class="hero-img">
+<img src="profile.jpg" alt="Alfaiz Deshmukh">
+</div>
 
-          <section id="about">
+</section>
 
-                    <div class="container">
 
-                              <h2 class="section-title">About Me</h2>
+<!-- ABOUT -->
 
-                              <p>
-                                        DevOps enthusiast with experience in Linux systems, automation,
-                                        cloud infrastructure, and CI/CD pipelines. I enjoy building automation,
-                                        deploying applications using Docker and cloud platforms, and solving
-                                        complex system issues.
-                              </p>
+<section id="about">
 
-                    </div>
+<div class="container">
 
-          </section>
+<h2 class="section-title">About Me</h2>
 
+<p>
+DevOps enthusiast with hands-on experience in Linux administration,
+Docker, AWS cloud infrastructure, and CI/CD automation.
+I enjoy solving deployment challenges and building reliable systems.
+</p>
 
-          <!-- SKILLS -->
+</div>
 
-          <section id="skills">
+</section>
 
-                    <div class="container">
 
-                              <h2 class="section-title">Technical Skills</h2>
+<!-- SKILLS -->
 
-                              <div class="skills-grid">
+<section id="skills">
 
-                                        <div class="skill">Python</div>
-                                        <div class="skill">AWS</div>
-                                        <div class="skill">Docker</div>
-                                        <div class="skill">Terraform</div>
-                                        <div class="skill">CI/CD</div>
-                                        <div class="skill">Linux</div>
-                                        <div class="skill">Networking</div>
-                                        <div class="skill">Ansible</div>
-                                        <div class="skill">Git</div>
+<div class="container">
 
-                              </div>
+<h2 class="section-title">Technical Skills</h2>
 
-                    </div>
+<div class="skills-grid">
 
-          </section>
+<div class="skill">Python</div>
+<div class="skill">AWS</div>
+<div class="skill">Docker</div>
+<div class="skill">Terraform</div>
+<div class="skill">CI/CD</div>
+<div class="skill">Linux</div>
+<div class="skill">Networking</div>
+<div class="skill">Ansible</div>
+<div class="skill">Git</div>
 
+</div>
 
-          <!-- PROJECTS -->
+</div>
 
-          <section id="projects">
+</section>
 
-                    <div class="container">
 
-                              <h2 class="section-title">Projects</h2>
+<!-- PROJECTS -->
 
-                              <div class="projects">
+<section id="projects">
 
-                                        <div class="project-card">
+<div class="container">
 
-                                                  <h3>AI Gear Fault Detection</h3>
+<h2 class="section-title">Projects</h2>
 
-                                                  <p>
-                                                            AI-driven system that detects gear faults using vibration
-                                                            signal analysis.
-                                                            Implemented signal processing and predictive maintenance
-                                                            algorithms
-                                                            using Python.
-                                                  </p>
+<div class="projects">
 
-                                        </div>
+<div class="project-card">
 
-                                        <div class="project-card">
+<h3>AI Gear Fault Detection</h3>
 
-                                                  <h3>Public API Data Aggregation</h3>
+<p>
+Developed an AI-driven system to detect gear faults using vibration
+signal analysis and predictive maintenance techniques.
+</p>
 
-                                                  <p>
-                                                            Python automation tool that collects and processes data from
-                                                            multiple
-                                                            public APIs. Generates structured reports for analysis and
-                                                            automation.
-                                                  </p>
+</div>
 
-                                        </div>
+<div class="project-card">
 
-                              </div>
+<h3>Public API Data Aggregation</h3>
 
-                    </div>
+<p>
+Python automation system that collects and processes data from
+multiple APIs and generates structured reports.
+</p>
 
-          </section>
+</div>
 
+</div>
 
-          <!-- EXPERIENCE -->
+</div>
 
-          <section id="experience">
+</section>
 
-                    <div class="container">
 
-                              <h2 class="section-title">Experience</h2>
+<!-- CONTACT -->
 
-                              <div class="timeline">
+<section id="contact">
 
-                                        <h3>S3 Global Solutions LLP</h3>
+<div class="container contact">
 
-                                        <p><strong>Data & IT Support Intern</strong></p>
+<h2 class="section-title">Contact</h2>
 
-                                        <p>
-                                                  Worked on data collection, data cleaning, analysis, and reporting
-                                                  to support business decision-making.
-                                        </p>
+<p>📧 alfaizdeshmukh2@gmail.com</p>
+<p>📱 +91-8625895066</p>
+<p>📍 Mumbai, India</p>
 
-                              </div>
+<br>
 
-                    </div>
+<a href="https://github.com/alfaizdeshmukh2-lang" class="btn" target="_blank">GitHub</a>
+<a href="https://www.linkedin.com/in/alfaiz-deshmukh-994999268" class="btn" target="_blank">LinkedIn</a>
 
-          </section>
+</div>
 
+</section>
 
-          <!-- CONTACT -->
 
-          <section id="contact">
+<footer>
 
-                    <div class="container contact">
+<p>© 2026 Alfaiz Deshmukh | DevOps Portfolio</p>
 
-                              <h2 class="section-title">Contact</h2>
-
-                              <p>📧 alfaizdeshmukh2@gmail.com</p>
-                              <p>📱 +91-8625895066</p>
-                              <p>📍 Mumbai, India</p>
-
-                              <br>
-
-                              <a class="btn" href="#">LinkedIn Profile</a>
-
-                    </div>
-
-          </section>
-
-
-          <footer>
-
-                    <p>© 2026 Alfaiz Deshmukh | DevOps Portfolio</p>
-
-          </footer>
-
+</footer>
 
 </body>
-
 </html>
